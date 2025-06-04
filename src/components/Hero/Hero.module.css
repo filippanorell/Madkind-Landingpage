@@ -1,0 +1,13 @@
+.hero {
+  height: 600px; /* Bestämmer höjden på hero-sectionen */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gör att bilden fyller rutan utan att förvrängas */
+  object-position: center;
+}

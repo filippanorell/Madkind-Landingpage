@@ -1,0 +1,31 @@
+.footer {
+  background: #f2f2f2;
+  padding: 60px;
+}
+
+.subscribe {
+  text-align: center;
+}
+
+.subscribe input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.rights {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+}

@@ -1,0 +1,17 @@
+.highlights {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px;
+}
+
+.box img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.box p {
+  text-align: center;
+  margin-top: 10px;
+}

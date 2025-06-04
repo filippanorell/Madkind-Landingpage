@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.freeShipping {
+  background: black;
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+}
+
+.mainBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.rightIcons {
+  font-size: 20px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
