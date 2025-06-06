@@ -19,9 +19,9 @@
   padding: 20px 40px;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 24px;
+.logo img {
+  height: 40px;
+  width: auto;
 }
 
 .navLinks {
@@ -34,7 +34,32 @@
   font-size: 20px;
 }
 
-.logo img {
-  height: 40px;
-  width: auto;
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .showMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }

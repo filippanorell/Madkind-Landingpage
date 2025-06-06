@@ -1,24 +1,32 @@
 .products {
-  padding: 60px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px; /* standard gap */
+  justify-items: center;
 }
 
 .card {
-  width: 220px;
   border: 1px solid #ddd;
   padding: 10px;
+  width: 100%;
+  max-width: 250px;
 }
 
 .card img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  aspect-ratio: 1/1;
   border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    gap: 15px !important;
+  }
 }
