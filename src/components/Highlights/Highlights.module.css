@@ -7,19 +7,28 @@
 }
 
 .box {
+  display: block;
   border: 1px solid #ddd;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 8px;
   background-color: #fff;
-  max-width: 400px; /* större kort */
+  max-width: 400px;
   width: 100%;
   text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .box img {
   width: 100%;
-  aspect-ratio: 1/1; /* kvadratiska bilder */
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -28,4 +37,10 @@
   margin-top: 15px;
   font-weight: 500;
   font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.box:hover p {
+  color: #555;
+  text-decoration: underline;
 }

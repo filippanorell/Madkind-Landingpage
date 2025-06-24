@@ -10,17 +10,19 @@
   justify-items: center;
 }
 
-@media (min-width: 1024px) {
-  .grid {
-    gap: 15px;
-  }
-}
-
 .card {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   max-width: 250px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
@@ -29,4 +31,65 @@
   object-fit: cover;
   aspect-ratio: 1/1;
   border-radius: 8px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+.card {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Desktopjusteringar */
+@media screen and (min-width: 768px) {
+  .grid {
+    gap: 40px;
+  }
+
+  .card button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .card p {
+    font-size: 18px;
+  }
+}
+
+/* Mobilanpassning */
+@media screen and (max-width: 767px) {
+  .card {
+    max-width: 180px;
+    padding: 16px;
+  }
+
+  .card button {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
 }
